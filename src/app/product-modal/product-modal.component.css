@@ -3,11 +3,16 @@ mat-form-field {
 }
 /* .modal-title {
 } */
+
+.mat-focused {
+  border: none;
+}
 .input-field {
   margin-top: 10px;
 }
 .dialog-wrapper {
   width: 600px;
+  background-color: rgb(186, 186, 199);
 }
 .mat-mdc-radio-button ~ .mat-mdc-radio-button {
   margin-left: 16px;

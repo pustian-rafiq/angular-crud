@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ProductsService } from '../services/products/products.service';
@@ -8,6 +8,7 @@ import { ProductData } from '../types/types';
   selector: 'app-product-modal',
   templateUrl: './product-modal.component.html',
   styleUrls: ['./product-modal.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProductModalComponent {
   freshness: string[] = ['Brand New', 'Second Hand', 'Fabrished Product'];

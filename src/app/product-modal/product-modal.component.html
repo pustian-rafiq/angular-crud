@@ -2,17 +2,48 @@
   <h1 mat-dialog-title class="modal-title">Add Product Form</h1>
   <div mat-dialog-content>
     <form action="" [formGroup]="productForm">
+      <div>
+        <label>Mobile</label>
+        <mat-form-field appearance="outline" class="input-field">
+          <input matInput placeholder="Enter mobile" formControlName="mobile" />
+          <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Email</label>
+        <mat-form-field appearance="outline" class="input-field">
+          <input
+            matInput
+            placeholder="Enter product name"
+            formControlName="productName"
+          />
+          <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Password</label>
+        <mat-form-field appearance="outline" class="input-field">
+          <input
+            matInput
+            placeholder="Enter product name"
+            formControlName="productName"
+          />
+          <mat-icon matSuffix>visibility</mat-icon>
+          <mat-icon matSuffix>visibility_off</mat-icon>
+        </mat-form-field>
+      </div>
+      <label>Product Name</label>
       <mat-form-field appearance="outline" class="input-field">
-        <mat-label>Product Name</mat-label>
+        <!-- <mat-label>Product Name</mat-label> -->
         <input
           matInput
           placeholder="Enter product name"
           formControlName="productName"
         />
       </mat-form-field>
-
+      <label>Product Name</label>
       <mat-form-field appearance="outline">
-        <mat-label>Select Category</mat-label>
+        <!-- <mat-label>Select Category</mat-label> -->
         <mat-select formControlName="category">
           <mat-option value="Apple">Apple</mat-option>
           <mat-option value="Mango">Mango</mat-option>
